@@ -117,7 +117,7 @@ export function CompressionForm() {
             <Label>Liên kết rút gọn:</Label>
             <div className="flex gap-2">
               <Input value={result.shortUrl} readOnly className="flex-1" />
-              <Button onClick={handleCopyLink} variant="outline">
+              <Button onClick={handleCopyLink} className="px-4">
                 Sao chép
               </Button>
             </div>
