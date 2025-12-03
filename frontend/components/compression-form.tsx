@@ -175,15 +175,13 @@ export function CompressionForm() {
             <div className="grid grid-cols-2 gap-3">
               <Button
                 onClick={() => handleTypeChange('text')}
-                variant="outline"
-                className="h-24 flex-col text-base"
+                className="h-24 flex-col text-base border"
               >
                 📝 Văn bản
               </Button>
               <Button
                 onClick={() => handleTypeChange('image')}
-                variant="outline"
-                className="h-24 flex-col text-base"
+                className="h-24 flex-col text-base border"
               >
                 🖼️ Hình ảnh
               </Button>
@@ -191,7 +189,7 @@ export function CompressionForm() {
           </div>
         ) : (
           <>
-            <Button onClick={() => handleTypeChange(null)} variant="ghost" className="w-full justify-start">
+            <Button onClick={() => setContentType(null)} className="w-full justify-start">
               ← Quay lại
             </Button>
 
