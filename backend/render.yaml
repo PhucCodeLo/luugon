@@ -1,3 +1,11 @@
-env: python
-build:
-  bypassPoetry: true
+services:
+  - type: web
+    name: luugon-backend
+    env: python
+    pythonVersion: 3.11.6
+
+    build:
+      bypassPoetry: true
+
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
