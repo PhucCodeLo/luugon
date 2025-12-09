@@ -12,5 +12,9 @@ supabase==2.3.1
 httpx>=0.24,<0.26
 gotrue==2.12.4
 typing-extensions>=4.8.0
-anyio<4.0.0,>=3.7.1
-starlette<0.28.0,>=0.27.0
+anyio>=3.6.2
+starlette>=0.27.0,<0.28.0
+certifi>=2022.12.7
+urllib3>=1.26.14
+idna>=3.4
+charset-normalizer>=2.1.1
