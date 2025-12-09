@@ -4,6 +4,8 @@ services:
     env: python
     pythonVersion: 3.11.6
 
+    rootDir: backend
+
     build:
       bypassPoetry: true
 
